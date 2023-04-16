@@ -1,37 +1,42 @@
 <html>
-    <body style="overflow: hidden; font-family:  Calibri, 'Trebuchet MS', sans-serif; background-repeat: no-repeat; background-size: cover; background-color: white;">
+    <body style="overflow: hidden; font-family:  Calibri, 'Trebuchet MS', sans-serif; background-repeat: no-repeat; background-size: cover; background-color: #000;">
         <a id="cred" style="visibility: hidden; color: black;" href="https://ncs.io/Memes" target="_blank"><p>Song: Memes - Niviro</p></a>
         <div style="    
         position: absolute;
         bottom: 45%;
         width: 100%;">
-        <h1 id="id" style="text-align: center; text-shadow: 3px 3px gray;">Loading Fortnite....</h1>
+        <h1 id="id" style="color:#fff;text-align: center; text-shadow: 3px 3px gray;">Loading....</h1>
+        <h1 id="id2" style="display: none; color:#fff;text-align: center; text-shadow: 3px 3px gray;">Loading....</h1>
         <button id='btn' onclick="load()" style=" position: absolute; left: 47%; visibility: hidden;">Load Game</button>
         </div>
         <script>
 
             const id = document.getElementById('id');
+            const id2 = document.getElementById('id2');
             const btn = document.getElementById('btn');
-            const cred = document.getElementById('cred');
             const audio = new Audio('pump.mp3');
 
             function loaded() {
-                id.innerHTML = "Proxy Started Click Button To Play"
+                id.innerHTML = 'Proxy Started Click "Load Game" to Play'
                 btn.style.visibility = "visible";
             }
 
             setTimeout(loaded, 1000);
 
             function load() {
-            id.innerHTML = "TURN OFF YOUR ADBLOCKER OR ELSE IT WONT WORK"
-            fetch('https://api.ipify.org?format=json')
+            fetch('https://wtfismyip.com/json')
               .then(response => response.json())
-              .then(data => id.innerHTML = data.ip);
+              .then(data => id.innerHTML = "Your Public IP: " + data.YourFuckingIPAddress);
               document.body.style.backgroundImage = "url('game.gif')";
               btn.style.visibility = "hidden";
-              cred.style.visibility = "visible";
               audio.play();
-            }
+              id2.style.display = "block"; 
+              cred.style.visibility = "visible";
+
+              fetch('https://ipv4.wtfismyip.com/json')
+              .then(response => response.json())
+              .then(data => id2.innerHTML = "Your Private IP: " + data.YourFuckingIPAddress);
+            }  
 
             </script>
     </body>
