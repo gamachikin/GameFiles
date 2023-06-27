@@ -432,6 +432,12 @@
         "gameicon": "icon.png"
     },
     {
+        "game": "Algebra Jump",
+        "gameroot": "/files/aj/",
+        "gamefile": "index.html",
+        "gameicon": "roblox.gif"
+    },
+    {
         "game": "Doodle Jump",
         "gameroot": "/files/dj/",
         "gamefile": "index.html",
