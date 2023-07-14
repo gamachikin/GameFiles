@@ -414,18 +414,6 @@
         "gameicon": "logo.png"
     },
     {
-        "game": "Duck Life",
-        "gameroot": "/files/dl1/",
-        "gamefile": "index.html",
-        "gameicon": "gameicon.png"
-    },
-    {
-        "game": "Duck Life 2",
-        "gameroot": "/files/dl2/",
-        "gamefile": "index.html",
-        "gameicon": "gameicon.jpg"
-    },
-    {
         "game": "Nut Simulator",
         "gameroot": "/files/ns/",
         "gamefile": "index.html",
@@ -440,6 +428,42 @@
     {
         "game": "Doodle Jump",
         "gameroot": "/files/dj/",
+        "gamefile": "index.html",
+        "gameicon": "gameicon.png"
+    },
+    {
+        "game": "Duck Life",
+        "gameroot": "/files/dl1/",
+        "gamefile": "index.html",
+        "gameicon": "gameicon.png"
+    },
+    {
+        "game": "Duck Life 2",
+        "gameroot": "/files/dl2/",
+        "gamefile": "index.html",
+        "gameicon": "gameicon.jpg"
+    },
+    {
+        "game": "Duck Life 3",
+        "gameroot": "/files/dl2/",
+        "gamefile": "index.html",
+        "gameicon": "gameicon.jpg"
+    },
+    {
+        "game": "Duck Life 4",
+        "gameroot": "/files/dl4/",
+        "gamefile": "index.html",
+        "gameicon": "gameicon.png"
+    },
+    {
+        "game": "Duck Life 5",
+        "gameroot": "/files/dl5/",
+        "gamefile": "index.html",
+        "gameicon": "gameicon.png"
+    },
+    {
+        "game": "Bloons TD 5",
+        "gameroot": "/files/btd5/",
         "gamefile": "index.html",
         "gameicon": "gameicon.png"
     }
